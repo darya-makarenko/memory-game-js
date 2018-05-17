@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>match-match game</title>
+</head>
+<body>
+    <div class="match-match-game hard">
+        <div class="field-control">
+            <button id="field-leavegame">leave game</button>
+            <button id="field-restart">restart</button>
+            <div class="timer">
+                <canvas width="120px" height="40px"></canvas>
+            </div>
+        </div>
+        <div class="playing-field"></div>
+        <div class="menu-wrapper">
+            <div class="intro">
+                <div class="registration">
+                    <p>Welcome to the match-match game!</p>
+                    <p>Please, fill in the fields below (this info will be stored on your device only):</p>
+                    <input id="firstname" type="text" placeholder="First Name *">
+                    <input id="lastname" type="text" placeholder="Last Name">
+                    <input id="email" type="email" id="" placeholder="E-mail">
+                    <p>Or select past logs from the list:</p>
+                    <select id="past-profiles"></select>
+                    <button id="intro-apply">apply</button>
+                </div>
+                <div class="description">
+                    <p>Rules of the game:</p>
+                    <ul>
+                        <li>When the game starts, all cards are hidden</li>
+                        <li>Your task is to find all the matchs, choosing two cards per turn</li>
+                        <li>If the selected cards do not match, they are flipped back</li>
+                    </ul>
+                    <p>Control: mouse</p>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="menu-control">
+                    <button id="main-newgame">New game!</button><br />
+                    <button id="main-cardback">Change card back</button>
+                    <button id="main-difficulty">Change difficulty</button>
+                </div>
+                <div class="menu-congrats">
+                    <p id="finish-congrats"></p>
+                    <p id="finish-info"></p>
+                    <button id="finish-menu">menu</button>
+                    <button id="finish-restart">restart</button>
+                </div>
+                <div class="card-back"></div>
+                <div class="difficulty"><button id="easy">Easy (4x3)</button><button id="average">Average (6x3)</button><button id="hard">Hard (6x4)</button></div>
+                <div class="rating"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
